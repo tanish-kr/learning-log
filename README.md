@@ -61,8 +61,8 @@ Welcome to the study-wiki wiki!
 - [抽象クラスとインタフェース](https://github.com/tatsu07/study-wiki/blob/master/PG/Java/%E6%8A%BD%E8%B1%A1%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%A8%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9.md)
 - [例外](https://github.com/tatsu07/study-wiki/blob/master/PG/Java/%E4%BE%8B%E5%A4%96.md)
 - [入力と出力](https://github.com/tatsu07/study-wiki/blob/master/PG/Java/%E5%85%A5%E5%8A%9B%E3%81%A8%E5%87%BA%E5%8A%9B.md)
-- コレクションと総称型
-- スレッド
+- [コレクションと総称型](https://github.com/tatsu07/study-wiki/blob/master/PG/Java/%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E7%B7%8F%E7%A7%B0%E5%9E%8B.md)
+- [スレッド](https://github.com/tatsu07/study-wiki/blob/master/PG/Java/%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89.md)
 
 # インフラ
 ## [FirstStep](https://github.com/tatsu07/study-wiki/blob/master/Infrastructure/FirstStep.md)
