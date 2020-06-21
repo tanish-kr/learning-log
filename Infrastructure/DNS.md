@@ -1,3 +1,5 @@
+# DNS
+
 ## BINDのインストール
 
 ```console

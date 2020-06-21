@@ -1,3 +1,18 @@
+---
+title: PHP設定
+---
+
+> [Top](https://tanish-kr.github.io/study-wiki) / [PG](https://tanish-kr.github.io/study-wiki/PG) / [PHP](https://tanish-kr.github.io/study-wiki/PG/PHP) / PHP設定
+
+<!-- TOC -->
+
+- [PHP設定](#php設定)
+  - [php.ini](#phpini)
+
+<!-- /TOC -->
+
+# PHP設定
+
 ## php.ini
 
 ```
@@ -38,14 +53,14 @@ extension=php_pdo_mysql.dll
 ; Paths and Directories ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;include and extension
-include_path = "/usr/include/php/include"  
-extension_dir = "/usr/include/php/ext"     
+include_path = "/usr/include/php/include"
+extension_dir = "/usr/include/php/ext"
 
 ;default timezone
 [Date]
 date.timezone = Asia/Tokyo
 
-;pdo  
+;pdo
 [Pdo_mysql]
 pdo_mysql.default_socket=/opt/local/var/run/mysql5/mysqld.sock
 
