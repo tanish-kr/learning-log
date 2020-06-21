@@ -1,6 +1,6 @@
-{% assign base_url = '/PG/PHP/' %}
+{% assign base_url = '/PG/JavaScript/' %}
 
-### [PHP]({{ base_url }})
+### [JavaScript]({{ base_url }})
 
 {% for node in site.html_pages %}
   {% if node.url contains base_url %}

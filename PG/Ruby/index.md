@@ -1,6 +1,6 @@
 {% assign base_url = '/PG/Ruby/' %}
 
-### [Ruby](/PG/Ruby/)
+### [Ruby]({{ base_url }})
 
 {% for node in site.html_pages %}
   {% if node.url contains base_url %}

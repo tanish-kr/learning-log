@@ -1,6 +1,6 @@
-{% assign base_url = '/PG/PHP/' %}
+{% assign base_url = '/PG/Android/' %}
 
-### [PHP]({{ base_url }})
+### [Android]({{ base_url }})
 
 {% for node in site.html_pages %}
   {% if node.url contains base_url %}
