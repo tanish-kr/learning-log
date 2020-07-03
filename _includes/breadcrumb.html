@@ -12,12 +12,10 @@
         {% else %}
         {% assign url = url | append:path | append:'/' %}
         <li {% if url_paths.last == path %} class="is-active" {% endif %}>
-          <a href="{{ url }}" title="{{ path }}">{{ path }}</a>
+          <a href="{{ url }}" title="{{ path }}">{{ path | replace: '.html', '' | url_decode }}</a>
         </li>
         {% endif %}
       {% endfor %}
     </ul>
   </nav>
 </div>
-
-{{ url_paths[0..1] }}

@@ -31,6 +31,14 @@
 
     {% include breadcrumb.html %}
 
+    {% unless page.path contains 'index' %}
+    <div class="container toc box">
+      <div class="content">
+      {% include toc.html html=content %}
+      </div>
+    </div>
+    {% endunless %}
+
     {% comment %}
     <section class="section">
       <div class="container">
