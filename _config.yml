@@ -1,2 +1,8 @@
-theme: jekyll-theme-tactile
+title: tanish-kr's learning log
+description: 日々の学習をここに記録してます
+lang: ja_JP
+plugins:
+  - jekyll-seo-tag
 google_analytics: UA-63042509-4
+sass:
+  style: compact
