@@ -1,4 +1,6 @@
+{% assign root_path = include.root_path %}
 {% assign base_url = '/PG/JavaScript/' %}
+{% assign react_url = root_path | append: 'React/index.md' %}
 
 ### [JavaScript]({{ base_url }})
 
@@ -7,8 +9,10 @@
     {% assign node_url_parts = node.url | split: '/' %}
     {% assign node_url_parts_size = node_url_parts | size %}
     {% assign filename = node_url_parts | last %}
-    {% if node.url != base_url %}
+    {% unless node.url == base_url or node.url contains 'React' or node.url contains 'Backbone' or node.url contains 'node' %}
 - [{{ node.title }}]({{ node.url }})
-    {% endif %}
+    {% endunless %}
   {% endif %}
 {% endfor %}
+
+{% include_relative {{react_url}} %}
