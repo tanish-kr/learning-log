@@ -1,0 +1,23 @@
+{% assign url_paths = page.url | split: '/' %}
+{% assign url = '/' %}
+
+<div class="container">
+  <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+    <ul>
+      {% for path in url_paths %}
+        {% if path == '' %}
+        <li>
+          <a href="/" title="Top">Top</a>
+        </li>
+        {% else %}
+        {% assign url = url | append:path | append:'/' %}
+        <li {% if url_paths.last == path %} class="is-active" {% endif %}>
+          <a href="{{ url }}" title="{{ path }}">{{ path }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+
+{{ url_paths[0..1] }}
