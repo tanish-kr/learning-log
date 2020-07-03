@@ -4,10 +4,11 @@
 
 $family-sans-serif: 'Noto Sans JP','Roboto', sans-serif;
 
-$body-background-color: #fffafa;
+$body-background-color: #faf0e6;
 $body-color: #000;
+$footer-background-color: #faf0e6;
 
-$pre-background: #272822;;
+$pre-background: #272822;
 $pre: #f2f2f2;
 
 $code-background: #303030;
@@ -29,4 +30,9 @@ pre {
   @include mobile {
     margin-left: 20px;
   }
+}
+
+.toc {
+  background-color: #fffafa;
+  margin-top: 20px;
 }

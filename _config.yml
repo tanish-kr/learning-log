@@ -6,3 +6,5 @@ plugins:
 google_analytics: UA-63042509-4
 sass:
   style: compact
+kramdown:
+  parse_block_html: true
