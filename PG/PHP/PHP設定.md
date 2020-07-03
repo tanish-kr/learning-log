@@ -2,15 +2,6 @@
 title: PHP設定
 ---
 
-> [Top](https://tanish-kr.github.io/study-wiki) / [PG](https://tanish-kr.github.io/study-wiki/PG) / [PHP](https://tanish-kr.github.io/study-wiki/PG/PHP) / PHP設定
-
-<!-- TOC -->
-
-- [PHP設定](#php設定)
-  - [php.ini](#phpini)
-
-<!-- /TOC -->
-
 # PHP設定
 
 ## php.ini
