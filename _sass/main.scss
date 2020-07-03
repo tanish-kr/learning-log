@@ -18,6 +18,7 @@ $code: #f2f2f2;
 @import 'bulma-0.9.0/base/_all';
 @import 'bulma-0.9.0/layout/_all';
 @import 'bulma-0.9.0/elements/_all';
+@import 'bulma-0.9.0/helpers/_all';
 @import 'bulma-0.9.0/components/breadcrumb';
 @import 'bulma-0.9.0/grid/columns';
 
@@ -35,4 +36,8 @@ pre {
 .toc {
   background-color: #fffafa;
   margin-top: 20px;
+}
+
+.has-text-orange {
+  background-color: #ffa500;
 }
