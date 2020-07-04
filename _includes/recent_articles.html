@@ -1,0 +1,13 @@
+<h2>最近の記事</h2>
+
+<div class="box">
+<div class="content">
+<ul>
+{% for page in site.html_pages limit: 10 %}
+<li>
+  <a href="{{ page.url }}" title="{{ page.title }}">{{page.last_modified_at | date: '%Y-%m-%d %H:%M:%S'}} - {{ page.title }}</a>
+</li>
+{% endfor %}
+</ul>
+</div>
+</div>

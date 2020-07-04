@@ -85,6 +85,16 @@
       </div>
     </article>
 
+    {% if page.name != 'index.md' %}
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          {% include recent_articles.html %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
