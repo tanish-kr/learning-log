@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+---
+
 # Pythonの基本
 
 ## インデント
