@@ -250,6 +250,7 @@ DEPENDENCIES
   jekyll
   jekyll-last-modified-at
   jekyll-seo-tag
+  jekyll-sitemap
 
 BUNDLED WITH
    1.17.2

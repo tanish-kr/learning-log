@@ -4,6 +4,7 @@ lang: ja_JP
 plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
+  - jekyll-sitemap
 last-modified-at:
     date-format: '%Y-%m-%d %H:%M:%S'
 google_analytics: UA-63042509-4
