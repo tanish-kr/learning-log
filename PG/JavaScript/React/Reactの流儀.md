@@ -1,3 +1,9 @@
+---
+tags:
+  - JavaScript
+  - React
+---
+
 # Reactの流儀
 
 ## コンポジションを使う

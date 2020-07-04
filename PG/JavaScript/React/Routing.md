@@ -1,3 +1,9 @@
+---
+tags:
+  - JavaScript
+  - React
+---
+
 # Routing
 
 Reactのルーティングには幾つかライブラリは存在するが、`React Router`を基本的に使用するほうが良さそう

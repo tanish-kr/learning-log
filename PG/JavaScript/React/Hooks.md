@@ -1,3 +1,9 @@
+---
+tags:
+  - JavaScript
+  - React
+---
+
 # Hooks
 
 React16.8で追加された新機能。stateなどのReactの機能をクラスを書かずに使えるようになる。

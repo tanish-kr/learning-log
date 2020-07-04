@@ -1,3 +1,9 @@
+---
+tags:
+  - JavaScript
+  - React
+---
+
 # JSXの基本
 
 - JSXはテンプレート言語ではない

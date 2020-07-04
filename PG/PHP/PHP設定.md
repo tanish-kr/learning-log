@@ -1,5 +1,7 @@
 ---
 title: PHP設定
+tags:
+  - PHP
 ---
 
 # PHP設定
