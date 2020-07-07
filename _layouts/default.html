@@ -53,15 +53,17 @@
       </section>
     </header>
 
-    {% include breadcrumb.html %}
-    {% include tags.html %}
+    {% unless page.path contains 'privacy' %}
+      {% include breadcrumb.html %}
+      {% include tags.html %}
 
-    {% unless page.path contains 'index' %}
-    <div class="container toc box">
-      <div class="content">
-      {% include toc.html html=content %}
+      {% unless page.path contains 'index' %}
+      <div class="container toc box">
+        <div class="content">
+        {% include toc.html html=content %}
+        </div>
       </div>
-    </div>
+      {% endunless %}
     {% endunless %}
 
     {% comment %}
@@ -86,7 +88,7 @@
       </div>
     </article>
 
-    {% if page.name != 'index.md' %}
+    {% unless page.path contains 'privacy' or page.path contains 'index' %}
     <section class="section">
       <div class="container">
         <div class="content">
@@ -94,11 +96,12 @@
         </div>
       </div>
     </section>
-    {% endif %}
+    {% endunless %}
 
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
+          <a href="/privacy">Privacy Policy</a><br>
         {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
         {% endif %}
