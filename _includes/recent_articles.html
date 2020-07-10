@@ -3,9 +3,17 @@
 <div class="box">
 <div class="content">
 <ul>
-{% for page in site.html_pages limit: 10 %}
+{% for page in site.posts limit: 10 %}
 <li>
-  <a href="{{ page.url }}" title="{{ page.title }}">{{page.last_modified_at | date: '%Y-%m-%d %H:%M:%S'}} - {{ page.title }}</a>
+<a href="{{ page.url }}" title="{{ page.title }}">{{ page.date | date: '%Y-%m-%d' }} -
+{{ page.title }}</a>
+<span class="are-small ml-4">
+{% for tag in page.tags %}
+<a href="/tags/{{ tag }}/">
+<span class="tag is-primary">{{ tag }}</span>
+</a>
+{% endfor %}
+</span>
 </li>
 {% endfor %}
 </ul>
