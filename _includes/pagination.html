@@ -1,0 +1,29 @@
+<div class="container">
+  {% assign page_category = page.categories | last %}
+  <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+    {% if page.previous %}
+      {% assign previous_category = page.previous.categories | last %}
+      {% if previous_category == page_category %}
+      <a class="pagination-previous pagination-exists" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+        <span class="icon"><i class="fas fa-angle-left"></i></span>{{ page.previous.title }}</a>
+      {% else %}
+      <a class="pagination-previous" href="#">
+        <span class="icon"><i class="fas fa-angle-left"></i></span>
+      </a>
+      {% endif %}
+    {% endif %}
+
+    {% if page.next %}
+      {% assign next_category = page.next.categories | last %}
+      {% if next_category == page_category %}
+      <a class="pagination-next pagination-exists" href="{{ page.next.url }}" title="{{ page.next.title }}">
+        {{ page.next.title }}<span class="icon"><i class="fas fa-angle-right"></i></span>
+      </a>
+      {% else %}
+      <a class="pagination-previous" href="#">
+        <span class="icon"><i class="fas fa-angle-right"></i></span>
+      </a>
+      {% endif %}
+    {% endif %}
+  </nav>
+</div>
