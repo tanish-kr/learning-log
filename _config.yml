@@ -5,6 +5,21 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-sitemap
+  - jekyll-archives
+permalink: /:categories/:title
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tags/:name/'
+    category: '/categories/:name/'
 last-modified-at:
     date-format: '%Y-%m-%d %H:%M:%S'
 google_analytics: UA-63042509-4
