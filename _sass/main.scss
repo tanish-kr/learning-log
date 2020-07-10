@@ -20,6 +20,7 @@ $code: #f2f2f2;
 @import 'bulma-0.9.0/elements/_all';
 @import 'bulma-0.9.0/helpers/_all';
 @import 'bulma-0.9.0/components/breadcrumb';
+@import 'bulma-0.9.0/components/pagination';
 @import 'bulma-0.9.0/grid/columns';
 
 pre {
@@ -46,5 +47,11 @@ pre {
   margin-top: 15px;
   @include mobile {
     margin-left: 20px;
+  }
+}
+
+.pagination {
+  .pagination-exists {
+    background-color: white;
   }
 }
