@@ -32,4 +32,4 @@ jobs:
     - name: jekyll build
       run: bundle exec jekyll build
     - name: deploy s3
-      run: _script/deploy.sh
+      run: ./_script/deploy.sh
