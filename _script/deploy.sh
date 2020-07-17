@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
 
 deploy_dir="_site"
 html_files=`find $deploy_dir -name '*.html' -type f`
