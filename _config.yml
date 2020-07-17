@@ -1,12 +1,19 @@
 title: tanish-kr's learning log
 description: Learning output log
 lang: ja_JP
+safe: true
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-sitemap
   - jekyll-archives
-permalink: /:categories/:title
+  - jekyll-relative-links
+  - jekyll-paginate
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+permalink: /:slugified_categories/:title
 jekyll-archives:
   enabled:
     - year

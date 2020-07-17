@@ -7,3 +7,5 @@
 vendor/bundle
 
 _site
+
+.jekyll-cache
