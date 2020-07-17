@@ -20,7 +20,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: chrislennon/action-aws-cli@v1.1
     - name: Cache bundler
       uses: actions/cache@v2
       with:
@@ -42,6 +41,7 @@ jobs:
     - name: jekyll build
       run: bundle exec jekyll build
     - name: deploy s3
+      uses: chrislennon/action-aws-cli@v1.1
       run: ./_script/deploy.sh
       shell: bash
       env:
