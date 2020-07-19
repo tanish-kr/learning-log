@@ -4,6 +4,12 @@ url: "https://www.tanish-kr.com"
 lang: ja_JP
 safe: true
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+logo: /assets/images/tv_sleep.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/tv_sleep.png
 plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
@@ -31,6 +37,8 @@ jekyll-archives:
 last-modified-at:
     date-format: '%Y-%m-%d %H:%M:%S'
 google_analytics: UA-63042509-4
+twitter:
+  username: tatsu_nkr
 sass:
   style: compact
 kramdown:
