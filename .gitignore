@@ -9,3 +9,5 @@ vendor/bundle
 _site
 
 .jekyll-cache
+
+.ruby-version
