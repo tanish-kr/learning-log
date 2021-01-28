@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: chrislennon/action-aws-cli@v1.1
+    - uses: aws-actions/configure-aws-credentials@v1
     - name: Cache bundler
       uses: actions/cache@v2
       with:
@@ -42,3 +42,6 @@ jobs:
         echo "AWS_SECRET_ACCESS_KEY=${{secrets.AWS_SECRET_ACCESS_KEY}}" >> $GITHUB_ENV
         ./_script/deploy.sh
       shell: bash
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
