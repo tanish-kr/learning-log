@@ -31,7 +31,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1.1.2
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
     - name: Install dependencies
