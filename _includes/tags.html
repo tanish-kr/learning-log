@@ -2,7 +2,7 @@
 <div class="container page-tags">
   <div class="tags are-medium">
     {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/" class="mr-2">
+    <a href="/tags/{{ tag | downcase }}/" class="mr-2">
       <span class="tag is-primary">{{ tag }}</span>
     </a>
     {% endfor %}
