@@ -9,7 +9,7 @@
 {{ page.title }}</a>
 <span class="are-small ml-4">
 {% for tag in page.tags %}
-<a href="/tags/{{ tag }}/">
+<a href="/tags/{{ tag | downcase }}/">
 <span class="tag is-primary">{{ tag }}</span>
 </a>
 {% endfor %}
