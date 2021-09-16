@@ -180,3 +180,7 @@ class CreateEmployees < ActiveRecord::Migration[5.0]
   end
 end
 ```
+
+## キャッシュ制御
+
+ActiveRecordの結果は基本的にキャッシュされている。`reload`メソッドを呼び出すことで、キャッシュが破棄され再度DBに問い合わせを行う。
